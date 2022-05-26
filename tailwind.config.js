@@ -1,4 +1,5 @@
 module.exports = {
+  prefix: 'lc-',
 	content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
 	theme: {
     fontWeight: {
@@ -10,6 +11,19 @@ module.exports = {
 		extend: {
       colors: {
         'regal-blue': '#243c5a',
+      },
+      opacity: {
+        0: '0',
+        25: '.25',
+        50: '.5',
+        75: '.75',
+        80: '.8',
+        100: '1',
+      },
+      boxShadow: {
+        inner: 'inset 0px -4px 0px #000000',
+        lg: '-10px 10px 0px #000000',
+        sm: '-5px 5px 0px #000000',
       },
       animation: {
         'fade-in': 'fade-in 200ms ease-out 0s 1 normal forwards running',
