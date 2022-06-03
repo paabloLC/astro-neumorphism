@@ -1,5 +1,4 @@
 module.exports = {
-  prefix: 'lc-',
 	content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
 	theme: {
     fontWeight: {
@@ -10,7 +9,17 @@ module.exports = {
     },
 		extend: {
       colors: {
-        'regal-blue': '#243c5a',
+        opera: {
+          'primary': '#6d5dfc',
+          'light': '#8abdff',
+          'dark': '#5b0eeb'
+        },
+        gray: {
+          'light-1': '#E4EBF5',
+          'light-2': '#c8d0e7',
+          'light-3': '#bec8e4',
+          'dark': '#9baacf'
+        },
       },
       opacity: {
         0: '0',
@@ -21,9 +30,8 @@ module.exports = {
         100: '1',
       },
       boxShadow: {
-        inner: 'inset 0px -4px 0px #000000',
-        lg: '-10px 10px 0px #000000',
-        sm: '-5px 5px 0px #000000',
+        up: '0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;',
+        down: 'inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff'
       },
       animation: {
         'fade-in': 'fade-in 200ms ease-out 0s 1 normal forwards running',
