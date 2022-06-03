@@ -3,9 +3,9 @@ import Layout from '../components/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<main class="p-8 max-w-lg rounded-tr-lg rounded-b-lg shadow-up">
 		<h1>Hi, I'm <span class="text-gradient bg-black text-2xxl font-[700]">Pablo</span></h1>
-		<p class="instructions bg-regal-blue">Let's get started doing the first <code>commit</code> now!</p>
+		<p class="instructions">Let's get started doing the first <code>commit</code> now!</p>
 		<ul role="list" class="link-card-grid">
 			<li class="link-card">
 				<a href="https://astro.build/integrations/">
@@ -71,12 +71,6 @@ import Layout from '../components/Layout.astro';
 		border: 0.1em solid var(--color-border);
 		border-radius: 4px;
 		padding: 0.15em 0.25em;
-	}
-
-	main {
-		margin: auto;
-    padding: 1em;
-		max-width: 60ch;
 	}
 
 	.text-gradient {
