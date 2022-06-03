@@ -4,47 +4,58 @@ import Layout from '../components/Layout.astro';
 
 <Layout title="Welcome to Astro.">
 	<main class="p-8 max-w-lg rounded-tr-lg rounded-b-lg shadow-up">
+		<div class="p-2.5 ml-auto shadow-down w-1/3 rounded-md">
+			hi hi
+		</div>
+		<div class="p-2.5 my-5 shadow-up w-full rounded-md">
+			hi hi
+		</div>
 		<h1>Hi, I'm <span class="text-gradient bg-black text-2xxl font-[700]">Pablo</span></h1>
-		<p class="instructions">Let's get started doing the first <code>commit</code> now!</p>
-		<ul role="list" class="link-card-grid">
-			<li class="link-card">
-				<a href="https://astro.build/integrations/">
-					<h2>Integrations <span>&rarr;</span></h2>
-					<p>Add component frameworks, Tailwind, Partytown, and more!</p>
-				</a>
-			</li>
-			<li class="link-card">
-				<a href="https://astro.build/themes/">
-					<h2>Themes <span>&rarr;</span></h2>
-					<p>Explore a galaxy of community-built starters.</p>
-				</a>
-			</li>
-			<li class="link-card">
-				<a href="https://docs.astro.build/">
-					<h2>Docs <span>&rarr;</span></h2>
-					<p>Learn our complete feature set and explore the API.</p>
-				</a>
-			</li>
-			<li class="link-card">
-				<a href="https://astro.build/chat/">
-					<h2>Chat <span>&rarr;</span></h2>
-					<p>
-						Ask, contribute, and have fun on our community Discord
-						<svg
-							class="heart"
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 512 512"
-							width="16"
-							height="16"
-							fill="currentColor"
-						>
-							<title>heart</title>
-							<path d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z" />
-						</svg>
-					</p>
-				</a>
-			</li>
-		</ul>
+		<div class="p-2.5 my-5 shadow-up w-full rounded-md">
+			<ul role="list" class="link-card-grid">
+				<li class="link-card">
+					<a href="https://astro.build/integrations/">
+						<h2>Integrations <span>&rarr;</span></h2>
+						<p>Add component frameworks, Tailwind, Partytown, and more!</p>
+					</a>
+				</li>
+				<li class="link-card">
+					<a href="https://astro.build/themes/">
+						<h2>Themes <span>&rarr;</span></h2>
+						<p>Explore a galaxy of community-built starters.</p>
+					</a>
+				</li>
+				<li class="link-card">
+					<a href="https://docs.astro.build/">
+						<h2>Docs <span>&rarr;</span></h2>
+						<p>Learn our complete feature set and explore the API.</p>
+					</a>
+				</li>
+				<li class="link-card">
+					<a href="https://astro.build/chat/">
+						<h2>Chat <span>&rarr;</span></h2>
+						<p>
+							Ask, contribute, and have fun on our community Discord
+							<svg
+								class="heart"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512"
+								width="16"
+								height="16"
+								fill="currentColor"
+							>
+								<title>heart</title>
+								<path d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z" />
+							</svg>
+						</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<h1>Hi, I'm <span class="text-gradient bg-black text-2xxl font-[700]">Pablo</span></h1>
+		<div class="p-2.5 my-5 shadow-up w-full rounded-md">
+			hi hi
+		</div>
 	</main>
 </Layout>
 
@@ -66,13 +77,6 @@ import Layout from '../components/Layout.astro';
 		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
-	code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
-
 	.text-gradient {
 		font-weight: 900;
 		background-image: var(--astro-gradient);
@@ -91,15 +95,6 @@ import Layout from '../components/Layout.astro';
 		50% {
 			background-position-y: 80%;
 		}
-	}
-
-	.instructions {
-		line-height: 1.8;
-		margin-bottom: 2rem;
-		background-image: var(--night-sky-gradient);
-		padding: 1.5rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
 	}
 
 	.link-card-grid {
