@@ -15,7 +15,7 @@ const { title } = Astro.props as Props;
 		<link rel="stylesheet" href="../src/styles/base.css" />
 		<title>{title}</title>
 	</head>
-	<body class="min-h-screen py-5 md:py-10 flex justify-center bg-gray-light-1">
+	<body class="max-h-screen min-h-screen py-5 md:py-10 flex justify-center bg-light-primary">
 		<slot />
 	</body>
 </html>
