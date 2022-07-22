@@ -1,4 +1,5 @@
 ---
+import IconButton from '../components/IconButton.astro';
 import Layout from '../components/Layout.astro';
 ---
 
@@ -12,7 +13,11 @@ import Layout from '../components/Layout.astro';
 	
 		</div>
 		<div class="p-2.5 my-5 shadow-up w-full rounded-md">
-			hi hi
+			<IconButton
+				srOnly="hi hi"
+				type="button"
+				svgName="home-default.svg"
+			/>
 		</div>
 		<h1>Hi, I'm <span class="text-gradient bg-black text-2xxl font-[700]">Pablo</span></h1>
 		<div class="p-2.5 my-5 shadow-up w-full rounded-md">
