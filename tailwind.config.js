@@ -37,21 +37,24 @@ module.exports = {
       backgroundImage: {
         'gradient-main': 'linear-gradient(210.55deg, #EBF2F9 19.14%, #C6D7EB 154.68%)',
         'button-curved-default': 'radial-gradient(315.18% 315.18% at -124.11% -101.79%, #B9CCE2 11.1%, #FFFFFF 85.21%), #E3EDF7',
+        'button-flat-border': 'linear-gradient(130.18deg, #FFFFFF 35.92%, rgba(55, 83, 111, 0.4) 190.57%)',
       },
       boxShadow: {
         main: '-16px -16px 40px rgba(255, 255, 255, 0.8), 16px 4px 64px rgba(18, 61, 101, 0.3), inset -8px -6px 80px rgba(255, 255, 255, 0.18)',
         'button-curved-default': '-4px -2px 16px rgba(255, 255, 255, 0.7), 4px 2px 16px rgba(136, 165, 191, 0.38)',
         'button-curved-pressed': 'inset -4px -4px 16px rgba(255, 255, 255, 0.8), inset 4px 4px 12px rgba(136, 165, 191, 0.4)',
+        'button-flat-nopressed': '-4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48)',
+        'button-flat-pressed': 'inset -3px -3px 7px #FFFFFF, inset 3px 3px 7px rgba(136, 165, 191, 0.48)',
         up: '0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff',
         down: 'inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff',
       },
       animation: {
         'fade-in': 'fade-in 200ms ease-out 0s 1 normal forwards running',
         'fade-out': 'fade-out 200ms ease-in 0s 1 normal forwards running',
-        expand: 'expand 400ms linear 0s 1 normal forwards running',
+        'expand': 'expand 400ms linear 0s 1 normal forwards running',
         'slide-in': 'slide-in 400ms linear 0s 1 normal forwards running',
         'slide-out': 'slide-out 400ms linear 0s 1 normal forwards running',
-        collapse: 'collapse 400ms linear 0s 1 normal forwards running'
+        'collapse': 'collapse 400ms linear 0s 1 normal forwards running'
       },
       spacing: {
         0.5: '0.125rem', // 2px
