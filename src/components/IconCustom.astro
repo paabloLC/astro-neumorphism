@@ -1,0 +1,13 @@
+---
+export interface Props {
+  svgName: string;
+  svgWidth: string;
+  svgHeight: string;
+}
+
+const {svgName, svgWidth, svgHeight} = Astro.props as Props;
+
+---
+<icon-lc class="relative flex">
+  <img width={svgWidth} height={svgHeight} class="opacity-100 hover:fill-red" src={'../../assets/' + '/' + svgName} />
+</icon-lc>
