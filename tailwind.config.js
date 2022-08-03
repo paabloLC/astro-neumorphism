@@ -45,6 +45,7 @@ module.exports = {
         'button-curved-pressed': 'inset -4px -4px 16px rgba(255, 255, 255, 0.8), inset 4px 4px 12px rgba(136, 165, 191, 0.4)',
         'button-flat-nopressed': '-4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48)',
         'button-flat-pressed': 'inset -3px -3px 7px #FFFFFF, inset 3px 3px 7px rgba(136, 165, 191, 0.48)',
+        'box-up': '-4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.54)',
         up: '0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff',
         down: 'inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff',
       },
