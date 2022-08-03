@@ -1,13 +1,17 @@
 ---
 export interface Props {
   svgName: string;
+  svgNameHover: string;
   svgWidth: string;
   svgHeight: string;
 }
 
-const {svgName, svgWidth, svgHeight} = Astro.props as Props;
+const {svgName, svgNameHover, svgWidth, svgHeight} = Astro.props as Props;
 
 ---
-<icon-lc class="relative flex">
-  <img width={svgWidth} height={svgHeight} class="opacity-100 hover:fill-red" src={'../../assets/' + '/' + svgName} />
+<icon-lc class="relative w-full flex">
+  <span width={svgWidth} height={svgHeight}>
+    <img width={svgWidth} height={svgHeight} class="opacity-100" src={'../../assets/' + '/' + svgName} />
+    <img width={svgWidth} height={svgHeight} class="opacity-10 hover:opacity-100 hover:ease-out hover:duration-300 absolute top-0" src={'../../assets/' + '/' + svgNameHover} />
+  </span>
 </icon-lc>
