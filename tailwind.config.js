@@ -14,6 +14,11 @@ module.exports = {
           'secondary': '#E3EDF7',
           'dark': '#5b0eeb'
         },
+        dark: {
+          'primary': '#EBF3FA',
+          'secondary': '#17191C',
+          'dark': '#5b0eeb'
+        },
         opera: {
           'primary': '#6d5dfc',
           'light': '#8abdff',
@@ -36,7 +41,13 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-main': 'linear-gradient(210.55deg, #EBF2F9 19.14%, #C6D7EB 154.68%)',
+        'gradient-main-dark': 'linear-gradient(112.71deg, #4D535C -7.06%, #171C21 50.9%, #121417 107.91%)',
+        'gradient-box-dark': 'linear-gradient(169.29deg, #262B2F -0.68%, #16191D 74.03%)',
+        'box-dark': 'radial-gradient(51.95% 152.6% at 26.24% -102.6%, rgba(252, 119, 23, 0.32) 0%, rgba(238, 131, 53, 0) 100%), linear-gradient(144.05deg, #32383E -69.07%, #17191C 122.22%)',
+        'buttons-box-dark': 'linear-gradient(94.6deg, #2F3439 -72.68%, #26292E 26.94%, #17191C 185.78%)',
         'button-curved-default': 'radial-gradient(315.18% 315.18% at -124.11% -101.79%, #B9CCE2 11.1%, #FFFFFF 85.21%), #E3EDF7',
+        'button-curved-default-dark': 'linear-gradient(146.19deg, #23272B -6.95%, #17191C 91.44%)',
+        'button-curved-pressed-dark': 'linear-gradient(327.43deg, #32383E -77.68%, #17191C 87.35%)',
         'button-flat-border': 'linear-gradient(130.18deg, #FFFFFF 35.92%, rgba(55, 83, 111, 0.4) 190.57%)',
       },
       boxShadow: {
@@ -46,6 +57,12 @@ module.exports = {
         'button-flat-nopressed': '-4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48)',
         'button-flat-pressed': 'inset -3px -3px 7px #FFFFFF, inset 3px 3px 7px rgba(136, 165, 191, 0.48)',
         'box-up': '-4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.54)',
+        'box-dark': '-4px -2px 16px rgba(195, 200, 205, 0.09), 4px 4px 18px rgba(0, 0, 0, 0.5)',
+        'box-dark-out': 'inset 2px 2px 2px rgba(26, 32, 38, 0.4)',
+        'buttons-box-dark': '-5px -6px 16px rgba(195, 200, 205, 0.04), 22px 22px 60px rgba(0, 0, 0, 0.5)',
+        'button-curved-default-dark': '-4px -4px 16px rgba(195, 200, 205, 0.06), 4px 4px 18px rgba(0, 0, 0, 0.6)',
+        'button-curved-pressed-dark': '-4px -2px 16px rgba(195, 200, 205, 0.07), 4px 4px 18px rgba(0, 0, 0, 0.44)',
+        'orange-dark': '-16px 20px 40px rgba(244, 102, 0, 0.3), -2px 2px 24px rgba(255, 144, 64, 0.6), -16px 28px 120px rgba(244, 102, 0, 0.1)',
         up: '0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff',
         down: 'inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff',
       },
@@ -94,13 +111,6 @@ module.exports = {
         sm: '0.9375rem', // 15px
         '2xxl': '1.75rem' // 28px
       },
-      minHeight: {
-        slide: '32.5rem'
-      },
-      minWidth: {
-        badge: '1.25rem',
-        dropdown: '17.5rem'
-      },
       maxWidth: {
         '1/6': '16.66%',
         '1/4': '25%',
@@ -128,4 +138,5 @@ module.exports = {
     },
 	},
 	plugins: [],
+  darkMode: 'class',
 };

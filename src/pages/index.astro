@@ -1,20 +1,34 @@
 ---
-import IconButton from '../components/IconButton.astro';
 import Layout from '../components/Layout.astro';
+import { IconSun, IconGithub } from '../components/icons';
+import RoundIconButton from '../components/RoundIconButton.astro';
+import SquareIconLink from 'src/components/SquareIconLink.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="flex flex-col p-4 m-4 md:p-8 md:m-0 max-w-2xl md:min-w-2xl rounded-tr-2xl rounded-tl-lg rounded-b-lg shadow-main bg-gradient-main">
-		<div class="flex self-end w-fit px-3 py-3 shadow-box-up rounded-2xl mb-4">
-			<IconButton
-				srOnly="hi hi"
-				type="button"
-				svgName="home-default.svg"
-				svgNameHover="home-pressed.svg"
-      />
+<Layout title="Welcome to Astro Neumorphism template">
+	<main class="flex flex-col p-4 m-4 md:p-8 md:m-0 max-w-2xl md:min-w-2xl rounded-tr-2xl rounded-tl-lg rounded-b-lg shadow-main bg-gradient-main dark:bg-gradient-box-dark dark:shadow-none">
+		<div class="flex self-end w-fit px-1.25 py-1.25 shadow-box-up rounded-2xl dark:bg-buttons-box-dark dark:shadow-box-dark-out mb-3">
+			<div class="dark:shadow-buttons-box-dark rounded-2xl w-full px-3 py-3">
+				<RoundIconButton
+					srOnly="hi hi"
+					type="button"
+					onclick="window.toggleTheme()"
+				>
+					<IconSun />
+				</RoundIconButton>
+
+				<SquareIconLink
+					title="link to GitHub"
+					href="https://github.com/paablolc/"
+					target="_blank"
+				>
+					<IconGithub />
+				</SquareIconLink>
+
+			</div>
 		</div>
 
-		<div class="p-2.5 my-5 shadow-up w-full rounded-md">
+		<div class="p-2.5 my-5 shadow-up dark:shadow-box-dark dark:bg-box-dark w-full rounded-md">
 			<ul role="list" class="link-card-grid">
 				<li class="link-card">
 					<a href="https://astro.build/integrations/">
@@ -30,68 +44,40 @@ import Layout from '../components/Layout.astro';
 				</li>
 			</ul>
 		</div>
-		<h1>Hi, I'm <span class="text-gradient bg-black text-2xxl font-[700]">Pablo</span></h1>
+		<div class="text-center pb-12 md:pb-16">
+			<h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 dark:text-slate-400">
+				Your website with
+			</h1>
+		</div>
 
-		<div class="flex self-end w-fit px-6 py-3 shadow-box-up rounded-2xl mt-auto">
-			<IconButton
-				srOnly="hi hi"
-				type="button"
-				svgName="home-default.svg"
-				svgNameHover="home-pressed.svg"
-      />
-      <IconButton
-        srOnly="hi hi"
-        type="button"
-        svgName="plus-default.svg"
-        svgNameHover="plus-pressed.svg"
-      />
-			<IconButton
-				srOnly="hi hi"
-				type="button"
-				svgName="settings-default.svg"
-        svgNameHover="settings-pressed.svg"
-			/>
+		<div class="flex self-end w-fit px-1.25 py-1.25 shadow-box-up rounded-2xl mt-auto dark:bg-box-dark dark:shadow-box-dark-out">
+			<div class="dark:shadow-buttons-box-dark rounded-2xl w-full px-3 py-3">
+				<RoundIconButton
+					srOnly="hi hi"
+					type="button"
+					onclick="window.toggleTheme()"
+				>
+					<IconSun />
+				</RoundIconButton>
+
+				<RoundIconButton
+					srOnly="hi hi"
+					type="button"
+				>
+					<IconGithub />
+				</RoundIconButton>
+				<RoundIconButton
+					srOnly="hi hi"
+					type="button"
+				>
+					<IconGithub />
+				</RoundIconButton>
+			</div>
 		</div>
 	</main>
 </Layout>
 
 <style>
-	:root {
-		--color-border: hsl(17, 24%, 90%);
-		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
-		--link-gradient: linear-gradient(45deg, #4F39FA, #DA62C4 30%, var(--color-border) 60%);
-		--night-sky-gradient: linear-gradient(0deg, #392362 -33%, #431f69 10%, #30216b 50%, #1f1638 100%);
-	}
-
-	h2 {
-		margin: 0;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	h2 span {
-		display: inline-block;
-		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
-
-	@keyframes pulse {
-		0%, 100% {
-			background-position-y: 0%;
-		}
-		50% {
-			background-position-y: 80%;
-		}
-	}
 
 	.link-card-grid {
 		display: grid;
