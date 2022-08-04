@@ -15,7 +15,24 @@ const { title } = Astro.props as Props;
 		<link rel="stylesheet" href="../src/styles/base.css" />
 		<title>{title}</title>
 	</head>
-	<body class="max-h-screen min-h-screen py-5 md:py-10 flex justify-center bg-light-primary">
+	<body class="max-h-screen min-h-screen py-5 md:py-10 flex justify-center bg-light-primary dark:bg-gradient-main-dark">
 		<slot />
 	</body>
 </html>
+
+
+<script is:inline>
+  const toggleTheme = () => {
+    document.documentElement.classList.toggle('dark');
+    localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+  }
+
+  window.toggleTheme = toggleTheme;
+
+  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+
+</script>

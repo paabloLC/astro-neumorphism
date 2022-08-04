@@ -1,4 +1,4 @@
-# Welcome to pabloLC portfolio template using [Astro](https://astro.build).
+# Welcome to Astro Neumorphismt template using [Astro](https://astro.build). (by [pabloLC](https://github.com/paabloLC))
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 

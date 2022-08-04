@@ -1,0 +1,24 @@
+---
+export interface Props {
+  srOnly: string;
+  type: string;
+  onclick?: string;
+}
+
+const { type, srOnly, onclick = '' } = Astro.props as Props;
+
+---
+
+<button type={type} onclick={onclick} class="text-black dark:text-gray-400 border-2 
+  border-transparent bg-light-secondary shadow-button-flat-nopressed hover:border-2 
+  hover:shadow-button-flat-pressed focus:opacity-100 focus:outline-none active:border-2 
+  active:shadow-button-flat-pressed font-medium rounded-full text-sm p-2.5 text-center 
+  inline-flex items-center mr-4 last-of-type:mr-0 
+  dark:bg-button-curved-default-dark dark:shadow-button-curved-default-dark 
+  dark:hover:bg-button-curved-pressed-dark dark:hover:shadow-button-curved-pressed-dark 
+  dark:active:bg-button-curved-pressed-dark dark:active:shadow-button-curved-pressed-dark 
+  dark:focus:bg-button-curved-pressed-dark dark:focus:shadow-button-curved-pressed-dark
+  dark:border-0">
+  <slot />
+  <span class="sr-only"> {srOnly} </span>
+</button>
