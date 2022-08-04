@@ -5,10 +5,13 @@ import Layout from '../components/Layout.astro';
 
 <Layout title="Welcome to Astro.">
 	<main class="flex flex-col p-4 m-4 md:p-8 md:m-0 max-w-2xl md:min-w-2xl rounded-tr-2xl rounded-tl-lg rounded-b-lg shadow-main bg-gradient-main">
-		<div class="p-2.5 ml-auto shadow-button-curved-default bg-button-curved-default hover:shadow-button-curved-pressed hover:bg-light-secondary w-[60px] h-[60px] rounded-full">
-
-
-	
+		<div class="flex self-end w-fit px-3 py-3 shadow-box-up rounded-2xl mb-4">
+			<IconButton
+				srOnly="hi hi"
+				type="button"
+				svgName="home-default.svg"
+				svgNameHover="home-pressed.svg"
+      />
 		</div>
 
 		<div class="p-2.5 my-5 shadow-up w-full rounded-md">
