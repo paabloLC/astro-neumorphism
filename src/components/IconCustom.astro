@@ -11,7 +11,7 @@ const {svgName, svgNameHover, svgWidth, svgHeight} = Astro.props as Props;
 ---
 <icon-lc class="relative w-full flex">
   <span width={svgWidth} height={svgHeight}>
-    <img width={svgWidth} height={svgHeight} class="opacity-100" src={'../../assets/' + '/' + svgName} />
-    <img width={svgWidth} height={svgHeight} class="opacity-10 hover:opacity-100 hover:ease-out hover:duration-300 absolute top-0" src={'../../assets/' + '/' + svgNameHover} />
+    <img width={svgWidth} height={svgHeight} class="opacity-70" src={'../../assets/' + '/' + svgName} />
+    <img width={svgWidth} height={svgHeight} class="opacity-10 hover:opacity-60 hover:ease-out hover:duration-300 absolute top-0" src={'../../assets/' + '/' + svgNameHover} />
   </span>
 </icon-lc>
