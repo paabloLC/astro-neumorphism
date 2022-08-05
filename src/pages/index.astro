@@ -6,29 +6,37 @@ import SquareIconLink from '../components/SquareIconLink.astro';
 ---
 
 <Layout title="Welcome to Astro Neumorphism template">
-	<main class="flex flex-col p-4 m-4 md:p-8 md:m-0 max-w-[40%] min-w-[40%] 2xl:min-w-[55%] 2xl:max-w-[55%] rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark">
-		<div class="flex self-end w-fit px-1.25 py-1.25 shadow-switcher rounded-2xl dark:bg-buttons-box-dark dark:shadow-box-dark-out mb-3">
-			<div class="dark:shadow-buttons-box-dark rounded-2xl w-full px-3 py-3">
-				<RoundIconButton
-					srOnly="Theme color switcher"
-					type="button"
-					onclick="window.toggleTheme()"
-				>
-					<IconSun />
-				</RoundIconButton>
-				<span class="mr-4"></span>
-				<SquareIconLink
-					title="link to GitHub"
-					href="https://github.com/paablolc/"
-					target="_blank"
-				>
-					<IconGithub />
-				</SquareIconLink>
+	<main class="flex flex-col p-4 m-4 md:p-8 md:m-0 md:max-w-[40%] md:min-w-[40%] 2xl:min-w-[55%] 2xl:max-w-[55%] rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark">
+		<div class="flex w-full relative mb-4">
+			<div class="flex w-fit absolute">
+				<IconAstro />
+			</div>
+			<div class="flex flex-col self-end text-right ml-auto text-xl w-fit text-light-blue-dark dark:text-dark-blue-light">
+				<h1 class="font-black leading-extra-loose md:text-3xl 2xl:text-4xl">Astro</h1>
+				<h1 class="font-thin leading-extra-loose md:text-2xl 2xl:text-4xl">Neumorphismt</h1>
+			</div>
+
+			<div class="flex w-fit h-fit px-1.25 py-1.25 ml-4 2xl:ml-8 shadow-switcher rounded-2xl dark:bg-buttons-box-dark dark:shadow-box-dark-out">
+				<div class="dark:shadow-buttons-box-dark rounded-2xl w-full px-3 py-3 h-fit">
+					<RoundIconButton
+						srOnly="Theme color switcher"
+						type="button"
+						onclick="window.toggleTheme()"
+					>
+						<IconSun />
+					</RoundIconButton>
+					<span class="md:mr-4"></span>
+					<SquareIconLink
+						title="link to GitHub"
+						href="https://github.com/paablolc/"
+						target="_blank"
+					>
+						<IconGithub />
+					</SquareIconLink>
+				</div>
 			</div>
 		</div>
-
 		<div class="p-2.5 my-4 shadow-up dark:shadow-box-dark dark:bg-box-dark w-full rounded-md min-h-[200px]">
-			<IconAstro />
 		</div>
 		<div class="text-center">
 			<h2 class="text-5xl text-light-blue-dark md:text-3xl 2xl:text-6xl font-bold leading-tighter tracking-tighter dark:text-dark-blue-light">
