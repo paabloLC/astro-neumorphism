@@ -11,7 +11,7 @@
 }
 
 html {
-  font-family: system-ui, sans-serif;
+  font-family: Raleway, system-ui, sans-serif;
   font-size: var(--font-size-base);
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -19,6 +19,5 @@ html {
 
 
 :global(code) {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Raleway, Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
