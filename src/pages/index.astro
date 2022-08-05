@@ -6,17 +6,17 @@ import SquareIconLink from 'src/components/SquareIconLink.astro';
 ---
 
 <Layout title="Welcome to Astro Neumorphism template">
-	<main class="flex flex-col p-4 m-4 md:p-8 md:m-0 max-w-2xl md:min-w-2xl rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark">
+	<main class="flex flex-col p-4 m-4 md:p-8 md:m-0 max-w-[40%] min-w-[40%] 2xl:min-w-[55%] 2xl:max-w-[55%] rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark">
 		<div class="flex self-end w-fit px-1.25 py-1.25 shadow-switcher rounded-2xl dark:bg-buttons-box-dark dark:shadow-box-dark-out mb-3">
 			<div class="dark:shadow-buttons-box-dark rounded-2xl w-full px-3 py-3">
 				<RoundIconButton
-					srOnly="hi hi"
+					srOnly="Theme color switcher"
 					type="button"
 					onclick="window.toggleTheme()"
 				>
 					<IconSun />
 				</RoundIconButton>
-
+				<span class="mr-4"></span>
 				<SquareIconLink
 					title="link to GitHub"
 					href="https://github.com/paablolc/"
@@ -24,33 +24,23 @@ import SquareIconLink from 'src/components/SquareIconLink.astro';
 				>
 					<IconGithub />
 				</SquareIconLink>
-
 			</div>
 		</div>
 
 		<div class="p-2.5 my-5 shadow-up dark:shadow-box-dark dark:bg-box-dark w-full rounded-md">
-			<ul role="list" class="link-card-grid">
-				<li class="link-card">
-					<a href="https://astro.build/integrations/">
-						<h2>Integrations <span>&rarr;</span></h2>
-						<p>Add component frameworks, Tailwind, Partytown, and more!</p>
-					</a>
-				</li>
-				<li class="link-card">
-					<a href="https://astro.build/themes/">
-						<h2>Themes <span>&rarr;</span></h2>
-						<p>Explore a galaxy of community-built starters.</p>
-					</a>
-				</li>
-			</ul>
+
 		</div>
-		<div class="text-center pb-12 md:pb-16">
-			<h1 class="text-5xl text-light-blue-dark md:text-6xl font-bold leading-tighter tracking-tighter mb-4 dark:text-dark-blue-light">
+		<div class="text-center">
+			<h2 class="text-5xl text-light-blue-dark md:text-3xl 2xl:text-6xl font-bold leading-tighter tracking-tighter dark:text-dark-blue-light">
+				Your website with
+			</h2>
+			<h1 class="text-xl text-light-blue-light md:text-xl 2xl:text-3xl font-bold leading-tighter tracking-tighter mb-4 dark:text-dark-blue-light">
 				Your website with
 			</h1>
-			<h1 class="text-xl text-light-blue-light md:text-xl font-bold leading-tighter tracking-tighter mb-4 dark:text-dark-blue-light">
-				Your website with
-			</h1>
+		</div>
+
+		<div class="flex flex-col grow p-2.5 my-5 shadow-down min-h-max h-max dark:shadow-box-dark dark:bg-box-dark w-full rounded-md">
+
 		</div>
 
 		<div class="flex self-end w-fit px-1.25 py-1.25 shadow-box-up rounded-2xl mt-auto dark:bg-box-dark dark:shadow-box-dark-out">
@@ -82,46 +72,7 @@ import SquareIconLink from 'src/components/SquareIconLink.astro';
 
 <style>
 
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
 
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 0.15rem;
-		background-image: var(--link-gradient);
-		background-size: 400%;
-		border-radius: 0.5rem;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: 1em 1.3em;
-		border-radius: 0.35rem;
-		color: var(--text-color);
-		background-color: white;
-		opacity: 0.8;
-	}
-
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-	}
-
-	.link-card:is(:hover, :focus-within) h2 {
-		color: #4F39FA;
-	}
-
-	.link-card:is(:hover, :focus-within) h2 span {
-		transform: translateX(2px);
-	}
 
 	.heart {
 		display: inline-block;
