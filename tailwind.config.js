@@ -12,11 +12,13 @@ module.exports = {
         light: {
           'primary': '#EBF3FA',
           'secondary': '#E3EDF7',
-          'dark': '#5b0eeb'
+          'blue-dark': '#31456A',
+          'blue-light': '#7687A1',
         },
         dark: {
           'primary': '#EBF3FA',
           'secondary': '#17191C',
+          'blue-light': '#7687a1',
         },
         opera: {
           'primary': '#6d5dfc',
@@ -64,6 +66,7 @@ module.exports = {
         'button-curved-pressed-dark': '-4px -2px 16px rgba(195, 200, 205, 0.07), 4px 4px 18px rgba(0, 0, 0, 0.44)',
         'sky-light': '-16px 20px 40px rgba(215, 215, 215, 0.3), -2px 2px 24px rgba(22, 28, 47, 0.3), -16px 28px 120px rgba(0, 0, 0, 0.1)',
         'orange-dark': '-16px 20px 40px rgba(244, 102, 0, 0.3), -2px 2px 24px rgba(255, 144, 64, 0.6), -16px 28px 120px rgba(244, 102, 0, 0.1)',
+        'switcher': '0px -6px 24px #FFFFFF, 0px 7px 16px rgba(104, 132, 157, 0.5)',
         up: '0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff',
         down: 'inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff',
       },
