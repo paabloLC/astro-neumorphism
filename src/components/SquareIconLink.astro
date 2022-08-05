@@ -2,7 +2,7 @@
 export interface Props {
   href: string;
   target: string;
-  title: string;
+  title?: string;
 }
 
 const { title, href, target } = Astro.props as Props;
