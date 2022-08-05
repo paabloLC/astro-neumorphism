@@ -1,12 +1,6 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
 	theme: {
-    fontWeight: {
-      light: 300,
-      normal: 400,
-      medium: 500,
-      bold: 700
-    },
 		extend: {
       colors: {
         light: {
@@ -109,12 +103,16 @@ module.exports = {
         55: '13.75rem', // 220px
         60: '15rem', // 240px
       },
+      lineHeight: {
+        'extra-loose': '1',
+      },
       fontSize: {
         xxxs: '0.75rem', // 12px
         xxs: '0.8125rem', // 13px
         xs: '0.875rem', // 14px
         sm: '0.9375rem', // 15px
-        '2xxl': '1.75rem' // 28px
+        '2xl': '1.75rem', // 28px
+        '3xl': '1.875rem' // 36px
       },
       zIndex: {
         '-1': '-1',
