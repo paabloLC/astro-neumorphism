@@ -17,7 +17,6 @@ module.exports = {
         dark: {
           'primary': '#EBF3FA',
           'secondary': '#17191C',
-          'dark': '#5b0eeb'
         },
         opera: {
           'primary': '#6d5dfc',
@@ -41,6 +40,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-main': 'linear-gradient(210.55deg, #EBF2F9 19.14%, #C6D7EB 154.68%)',
+        'gradient-box-light': 'linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%)',
         'gradient-main-dark': 'linear-gradient(112.71deg, #4D535C -7.06%, #171C21 50.9%, #121417 107.91%)',
         'gradient-box-dark': 'linear-gradient(169.29deg, #262B2F -0.68%, #16191D 74.03%)',
         'box-dark': 'radial-gradient(51.95% 152.6% at 26.24% -102.6%, rgba(252, 119, 23, 0.32) 0%, rgba(238, 131, 53, 0) 100%), linear-gradient(144.05deg, #32383E -69.07%, #17191C 122.22%)',
@@ -51,7 +51,7 @@ module.exports = {
         'button-flat-border': 'linear-gradient(130.18deg, #FFFFFF 35.92%, rgba(55, 83, 111, 0.4) 190.57%)',
       },
       boxShadow: {
-        main: '-16px -16px 40px rgba(255, 255, 255, 0.8), 16px 4px 64px rgba(18, 61, 101, 0.3), inset -8px -6px 80px rgba(255, 255, 255, 0.18)',
+        'box-light': '-16px -16px 40px rgba(255, 255, 255, 0.8), 16px 4px 64px rgba(18, 61, 101, 0.3), inset -8px -6px 80px rgba(255, 255, 255, 0.18)',
         'button-curved-default': '-4px -2px 16px rgba(255, 255, 255, 0.7), 4px 2px 16px rgba(136, 165, 191, 0.38)',
         'button-curved-pressed': 'inset -4px -4px 16px rgba(255, 255, 255, 0.8), inset 4px 4px 12px rgba(136, 165, 191, 0.4)',
         'button-flat-nopressed': '-4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48)',
@@ -62,6 +62,7 @@ module.exports = {
         'buttons-box-dark': '-5px -6px 16px rgba(195, 200, 205, 0.04), 22px 22px 60px rgba(0, 0, 0, 0.5)',
         'button-curved-default-dark': '-4px -4px 16px rgba(195, 200, 205, 0.06), 4px 4px 18px rgba(0, 0, 0, 0.6)',
         'button-curved-pressed-dark': '-4px -2px 16px rgba(195, 200, 205, 0.07), 4px 4px 18px rgba(0, 0, 0, 0.44)',
+        'sky-light': '-16px 20px 40px rgba(215, 215, 215, 0.3), -2px 2px 24px rgba(22, 28, 47, 0.3), -16px 28px 120px rgba(0, 0, 0, 0.1)',
         'orange-dark': '-16px 20px 40px rgba(244, 102, 0, 0.3), -2px 2px 24px rgba(255, 144, 64, 0.6), -16px 28px 120px rgba(244, 102, 0, 0.1)',
         up: '0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff',
         down: 'inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff',
