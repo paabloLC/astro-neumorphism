@@ -1,4 +1,6 @@
 ---
+import Technologies from "./Technologies.astro";
+
 export interface Props {
 	title: string;
 }
@@ -8,32 +10,37 @@ const { title } = Astro.props as Props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="stylesheet" href="../src/styles/base.css" />
-		<title>{title}</title>
-	</head>
-	<body class="min-h-screen py-5 md:py-10 flex justify-center bg-light-primary dark:bg-gradient-main-dark">
-		<slot />
-	</body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" href="../src/styles/base.css" />
+	<title>{title}</title>
+</head>
+
+<body
+	class="relative min-h-screen py-5 md:py-10 flex justify-center overflow-hidden bg-light-primary dark:bg-gradient-main-dark">
+	<Technologies />
+	<slot />
+</body>
+
 </html>
 
 
 <script is:inline>
 
-  const toggleTheme = () => {
-    document.documentElement.classList.toggle('dark');
-    localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
-  }
+	const toggleTheme = () => {
+		document.documentElement.classList.toggle('dark');
+		localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+	}
 
-  window.toggleTheme = toggleTheme;
+	window.toggleTheme = toggleTheme;
 
-  if (localStorage.theme === 'dark') {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-	
+	if (localStorage.theme === 'dark') {
+		document.documentElement.classList.add('dark')
+	} else {
+		document.documentElement.classList.remove('dark')
+	}
+
 </script>
