@@ -121,7 +121,25 @@ module.exports = {
       },
       transitionProperty: {
         width: 'width'
-      }
+      },
+      animation: {
+				'moving-background': 'moving-background 5s ease-in-out'
+			},
+			keyframes: {
+				'moving-background': {
+					'0%': {
+						transform: 'translateY(0)',
+						opacity: 0
+					},
+					'66%': {
+						opacity: 0.4
+					},
+					'100%': {
+						transform: 'translateY(-150px)',
+						opacity: 0
+					}
+				}
+			},
     },
 	},
 	plugins: [],
