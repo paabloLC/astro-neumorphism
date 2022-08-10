@@ -4,14 +4,14 @@ module.exports = {
     extend: {
       colors: {
         light: {
-          primary: "#EBF3FA",
-          secondary: "#E3EDF7",
+          "primary": "#EBF3FA",
+          "secondary": "#E3EDF7",
           "blue-dark": "#31456A",
           "blue-light": "#7687A1",
         },
         dark: {
-          primary: "#EBF3FA",
-          secondary: "#17191C",
+          "primary": "#EBF3FA",
+          "secondary": "#17191C",
           "blue-light": "#7687a1",
         },
         opera: {
@@ -23,7 +23,8 @@ module.exports = {
           "light-1": "#E4EBF5",
           "light-2": "#c8d0e7",
           "light-3": "#bec8e4",
-          dark: "#9baacf",
+          "light-4": "#ffffff5e",
+          "dark": "#35393E",
         },
       },
       opacity: {
@@ -53,6 +54,8 @@ module.exports = {
           "linear-gradient(146.19deg, #23272B -6.95%, #17191C 91.44%)",
         "button-curved-pressed-dark":
           "linear-gradient(327.43deg, #32383E -77.68%, #17191C 87.35%)",
+        "gradient-card-dark":
+          "linear-gradient(210.55deg, #353A40 -3.02%, #121416 93.08%),linear-gradient(244.98deg, rgba(80, 89, 98, 0.4) 11.49%, rgba(0, 0, 0, 0) 53.04%, rgba(0, 0, 0, 0.4) 100%)",
         "button-flat-border":
           "linear-gradient(130.18deg, #FFFFFF 35.92%, rgba(55, 83, 111, 0.4) 190.57%)",
       },

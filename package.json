@@ -10,12 +10,14 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "^0.2.1",
+    "@astrojs/preact": "0.5.2",
     "astro": "^1.0.0-beta.20",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "atropos": "1.0.2"
+    "atropos": "1.0.2",
+    "preact": "10.10.0"
   }
 }
