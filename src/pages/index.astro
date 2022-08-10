@@ -1,6 +1,6 @@
 ---
 import Layout from '../components/Layout.astro';
-import { IconSun, IconGithub, IconAstro } from '../components/icons';
+import { IconSun, IconGithub, IconAstro, IconUser, IconBlog, IconHome } from '../components/icons';
 import RoundIconButton from '../components/RoundIconButton.astro';
 import SquareIconLink from '../components/SquareIconLink.astro';
 import MainCard from 'src/components/MainCard.astro';
@@ -41,7 +41,7 @@ import MainCard from 'src/components/MainCard.astro';
 			<MainCard />
 		</div>
 		<div class="text-center">
-			<h2 class="text-5xl text-light-blue-dark md:text-3xl 2xl:text-4xl font-thin leading-tighter tracking-tighter dark:text-dark-blue-light">
+			<h2 class="text-xl text-light-blue-dark md:text-2xl 2xl:text-4xl font-thin leading-tighter tracking-tighter dark:text-dark-blue-light">
 				Your website with
 			</h2>
 			<!-- <h1 class="text-xl text-light-blue-light md:text-xl 2xl:text-2xl font-thin leading-tighter tracking-tighter dark:text-dark-blue-light">
@@ -58,22 +58,20 @@ import MainCard from 'src/components/MainCard.astro';
 				<RoundIconButton
 					srOnly="hi hi"
 					type="button"
-					onclick="window.toggleTheme()"
 				>
-					<IconSun />
-				</RoundIconButton>
-
-				<RoundIconButton
-					srOnly="hi hi"
-					type="button"
-				>
-					<IconGithub />
+					<IconHome />
 				</RoundIconButton>
 				<RoundIconButton
 					srOnly="hi hi"
 					type="button"
 				>
-					<IconGithub />
+					<IconBlog />
+				</RoundIconButton>
+				<RoundIconButton
+					srOnly="hi hi"
+					type="button"
+				>
+					<IconUser />
 				</RoundIconButton>
 			</div>
 		</div>
