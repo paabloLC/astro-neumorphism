@@ -3,12 +3,13 @@ import Layout from '../components/Layout.astro';
 import { IconSun, IconGithub, IconAstro } from '../components/icons';
 import RoundIconButton from '../components/RoundIconButton.astro';
 import SquareIconLink from '../components/SquareIconLink.astro';
+import MainCard from 'src/components/MainCard.astro';
 ---
 
 <Layout title="Welcome to Astro Neumorphism template">
-	<main class="flex flex-col p-4 m-4 md:p-8 md:m-0 md:max-w-[45%] md:min-w-[45%] 2xl:min-w-[55%] 2xl:max-w-[55%] rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark">
+	<main class="flex flex-col flex-wrap p-4 m-4 md:p-8 md:m-0 md:max-w-[75%] md:min-w-[75%] lg:max-w-[45%] lg:min-w-[45%] 2xl:max-w-[40%] 2xl:min-w-[40%] rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark w-fit">
 		<div class="flex w-full relative mb-4">
-			<div class="flex w-fit absolute">
+			<div class="flex w-15 -top-5 sm:top-0 sm:w-fit absolute">
 				<IconAstro />
 			</div>
 			<div class="flex flex-col self-end text-right ml-auto text-xl w-fit text-light-blue-dark dark:text-dark-blue-light">
@@ -17,7 +18,7 @@ import SquareIconLink from '../components/SquareIconLink.astro';
 			</div>
 
 			<div class="flex w-fit h-fit px-1.25 py-1.25 ml-4 2xl:ml-8 shadow-switcher rounded-2xl dark:bg-buttons-box-dark dark:shadow-box-dark-out">
-				<div class="dark:shadow-buttons-box-dark rounded-2xl w-full px-3 py-3 h-fit">
+				<div class="dark:shadow-buttons-box-dark rounded-2xl w-min flex sm:w-full px-3 py-3 h-fit">
 					<RoundIconButton
 						srOnly="Theme color switcher"
 						type="button"
@@ -25,9 +26,9 @@ import SquareIconLink from '../components/SquareIconLink.astro';
 					>
 						<IconSun />
 					</RoundIconButton>
-					<span class="md:mr-4"></span>
+					<span class="mr-1 md:mr-4"></span>
 					<SquareIconLink
-						title="link to GitHub"
+						title="Link to pabloLC GitHub"
 						href="https://github.com/paablolc/"
 						target="_blank"
 					>
@@ -36,16 +37,16 @@ import SquareIconLink from '../components/SquareIconLink.astro';
 				</div>
 			</div>
 		</div>
-		<div class="p-2.5 my-4 shadow-up dark:shadow-box-dark dark:bg-box-dark w-full rounded-md min-h-[200px]">
+		<div class="p-2.5 my-4 shadow-up dark:shadow-box-dark dark:bg-box-dark w-full 2xl:mx-auto rounded-lg">
+			<MainCard />
 		</div>
 		<div class="text-center">
-			<h2 class="text-5xl text-light-blue-dark md:text-3xl 2xl:text-6xl font-bold leading-tighter tracking-tighter dark:text-dark-blue-light">
+			<h2 class="text-5xl text-light-blue-dark md:text-3xl 2xl:text-4xl font-thin leading-tighter tracking-tighter dark:text-dark-blue-light">
 				Your website with
 			</h2>
-			<h1 class="text-xl text-light-blue-light md:text-xl 2xl:text-3xl font-bold leading-tighter tracking-tighter dark:text-dark-blue-light">
+			<!-- <h1 class="text-xl text-light-blue-light md:text-xl 2xl:text-2xl font-thin leading-tighter tracking-tighter dark:text-dark-blue-light">
 				Your website with
-			</h1>
-			<p>Test text</p>
+			</h1> -->
 		</div>
 
 		<div class="flex flex-col grow p-2.5 my-4 shadow-box-down-light box-decoration-slice min-h-max h-max dark:shadow-box-dark dark:bg-box-dark w-full rounded-md">
@@ -80,6 +81,7 @@ import SquareIconLink from '../components/SquareIconLink.astro';
 </Layout>
 
 <style>
+	
 
 /* raleway-200 - latin */
 @font-face {
