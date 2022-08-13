@@ -16,8 +16,3 @@ html {
   color: var(--color-text);
   background-color: var(--color-bg);
 }
-
-
-:global(code) {
-  font-family: Raleway, Menlo, Monaco, Lucida Console, Courier New, monospace;
-}
