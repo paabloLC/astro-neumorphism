@@ -9,8 +9,12 @@
     "resolveJsonModule": true,
     // Enable stricter transpilation for better output.
     "isolatedModules": true,
-    // Add type definitions for our Vite runtime.
-    "types": ["vite/client", "preact"],
+    "types": ["astro/client", "preact"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+    }
   }
 }
