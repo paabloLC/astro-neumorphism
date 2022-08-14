@@ -1,11 +1,12 @@
 ---
+import Counter from '@components/Counter';
 import MainContainer from 'src/components/MainContainer.astro';
 import Layout from '../components/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro Neumorphism template">
 	<MainContainer>
-
+		<Counter client:load />
 	</MainContainer>
 
 	<MainContainer>
