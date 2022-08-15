@@ -134,6 +134,7 @@ module.exports = {
         "extra-loose": "1",
       },
       fontSize: {
+        xxxxs: "0.64rem", // 12px
         xxxs: "0.75rem", // 12px
         xxs: "0.8125rem", // 13px
         xs: "0.875rem", // 14px
