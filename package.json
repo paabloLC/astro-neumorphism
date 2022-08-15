@@ -19,6 +19,7 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "atropos": "1.0.2"
+    "atropos": "1.0.2",
+    "moment": "^2.29.4"
   }
 }
