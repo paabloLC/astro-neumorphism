@@ -1,23 +1,11 @@
 ---
-import Counter from '@components/Counter';
+import MediumPost from '@components/MediumPost';
 import MainContainer from 'src/components/MainContainer.astro';
 import Layout from '../components/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro Neumorphism template">
 	<MainContainer>
-		<Counter client:load />
-	</MainContainer>
-
-	<MainContainer>
-		<div class="text-center">
-			<h2
-				class="text-xl text-light-blue-dark md:text-2xl 2xl:text-4xl font-thin leading-tighter tracking-tighter dark:text-dark-blue-light">
-				Your website with
-			</h2>
-			<h1 class="text-xl text-light-blue-light md:text-xl 2xl:text-2xl font-thin leading-tighter tracking-tighter dark:text-dark-blue-light">
-				Your website with
-			</h1>
-		</div>
+		<!-- <MediumPost client:load /> -->
 	</MainContainer>
 </Layout>
