@@ -4,7 +4,7 @@ import MainCard from "src/components/MainCard.astro";
 import MediumPost from "@components/MediumPost";
 import MainContainer from "src/components/MainContainer.astro";
 import ContainerScroll from "@components/ContainerScroll.astro";
-import TextSlide from "@components/TextSlide.astro";
+import TextSlide from "src/components/TextSlide.astro";
 ---
 
 <Layout title="Welcome to Astro Neumorphism template">
@@ -15,10 +15,9 @@ import TextSlide from "@components/TextSlide.astro";
 			<MediumPost client:load />
 		</ContainerScroll>
 	</div>
-
 	<div class="flex 2xl:hidden">
 		<MainContainer>
-			<TextSlide client:load />
+			<TextSlide />
 		</MainContainer>
 	</div>
 </Layout>

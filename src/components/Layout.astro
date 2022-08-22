@@ -1,8 +1,14 @@
 ---
 import Technologies from "./Technologies.astro";
-import { IconSun, IconGithub, IconAstro, IconUser, IconBlog, IconHome } from '../components/icons';
+import {
+	IconSun,
+	IconGithub,
+	IconAstro,
+	IconUser,
+	IconBlog,
+	IconHome,
+} from "../components/icons";
 import RoundIconButton from "./RoundIconButton.astro";
-import MainCard from "./MainCard.astro";
 import SquareIconLink from "./SquareIconLink.astro";
 
 export interface Props {
@@ -14,204 +20,102 @@ const { title } = Astro.props as Props;
 
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="stylesheet" href="../src/styles/base.css" />
+		<title>{title}</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link rel="stylesheet" href="../src/styles/base.css" />
-	<title>{title}</title>
-</head>
+	<body
+		class="flex flex-col items-center justify-center relative box-border overflow-hidden min-h-screen bg-light-primary dark:bg-gradient-main-dark"
+	>
+		<Technologies />
+		<main
+			class="flex flex-col p-4 m-4 md:p-8 md:m-0 md:max-w-[75%] md:min-w-[75%] lg:max-w-[45%] lg:min-w-[45%] 2xl:max-w-[40%] 2xl:min-w-[40%] rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark w-fit h-[calc(100vh_-_80px)] justify-between"
+		>
+			<div class="flex w-full relative mb-4">
+				<div class="flex w-15 -top-5 sm:top-0 sm:w-fit absolute">
+					<IconAstro />
+				</div>
+				<div
+					class="flex flex-col self-end text-right ml-auto text-xl w-fit text-light-blue-dark dark:text-dark-blue-light"
+				>
+					<h1 class="font-black leading-extra-loose md:text-3xl 2xl:text-4xl">
+						Astro
+					</h1>
+					<h1 class="font-thin leading-extra-loose md:text-2xl 2xl:text-4xl">
+						Neumorphismt
+					</h1>
+				</div>
 
-<body
-	class="flex flex-col items-center justify-center relative box-border overflow-hidden min-h-screen bg-light-primary dark:bg-gradient-main-dark">
-	<Technologies />
-	<main
-		class="flex flex-col p-4 m-4 md:p-8 md:m-0 md:max-w-[75%] md:min-w-[75%] lg:max-w-[45%] lg:min-w-[45%] 2xl:max-w-[40%] 2xl:min-w-[40%] rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark w-fit h-[calc(100vh_-_80px)] justify-between">
-		<div class="flex w-full relative mb-4">
-			<div class="flex w-15 -top-5 sm:top-0 sm:w-fit absolute">
-				<IconAstro />
+				<div
+					class="flex w-fit h-fit px-1.25 py-1.25 ml-4 2xl:ml-8 shadow-switcher rounded-2xl dark:bg-buttons-box-dark dark:shadow-box-dark-out"
+				>
+					<div
+						class="dark:shadow-buttons-box-dark rounded-2xl w-min flex sm:w-full px-3 py-3 h-fit"
+					>
+						<RoundIconButton
+							srOnly="Theme color switcher"
+							type="button"
+							onclick="window.toggleTheme()"
+						>
+							<IconSun />
+						</RoundIconButton>
+						<span class="mr-1 md:mr-4"></span>
+						<SquareIconLink
+							title="Link to pabloLC GitHub"
+							href="https://github.com/paablolc/"
+							target="_blank"
+						>
+							<IconGithub />
+						</SquareIconLink>
+					</div>
+				</div>
 			</div>
-			<div
-				class="flex flex-col self-end text-right ml-auto text-xl w-fit text-light-blue-dark dark:text-dark-blue-light">
-				<h1 class="font-black leading-extra-loose md:text-3xl 2xl:text-4xl">Astro</h1>
-				<h1 class="font-thin leading-extra-loose md:text-2xl 2xl:text-4xl">Neumorphismt</h1>
-			</div>
+			<slot />
 
 			<div
-				class="flex w-fit h-fit px-1.25 py-1.25 ml-4 2xl:ml-8 shadow-switcher rounded-2xl dark:bg-buttons-box-dark dark:shadow-box-dark-out">
-				<div class="dark:shadow-buttons-box-dark rounded-2xl w-min flex sm:w-full px-3 py-3 h-fit">
-					<RoundIconButton srOnly="Theme color switcher" type="button" onclick="window.toggleTheme()">
-						<IconSun />
-					</RoundIconButton>
-					<span class="mr-1 md:mr-4"></span>
-					<SquareIconLink title="Link to pabloLC GitHub" href="https://github.com/paablolc/" target="_blank">
-						<IconGithub />
+				class="flex self-end w-fit px-1.25 py-1.25 shadow-box-up rounded-2xl dark:bg-box-dark dark:shadow-box-dark-out"
+			>
+				<div class="dark:shadow-buttons-box-dark rounded-2xl w-full px-3 py-3">
+					<SquareIconLink title="Go to the home page" target="_self" href="/">
+						<IconHome />
+					</SquareIconLink>
+					<SquareIconLink
+						title="Go to post list page"
+						target="_self"
+						href="/postlist"
+					>
+						<IconBlog />
+					</SquareIconLink>
+					<SquareIconLink
+						title="Go to about me page"
+						target="_self"
+						href="/aboutme"
+					>
+						<IconUser />
 					</SquareIconLink>
 				</div>
 			</div>
-		</div>
-		<slot />
+		</main>
 
-		<div
-			class="flex self-end w-fit px-1.25 py-1.25 shadow-box-up rounded-2xl dark:bg-box-dark dark:shadow-box-dark-out">
-			<div class="dark:shadow-buttons-box-dark rounded-2xl w-full px-3 py-3">
-				<SquareIconLink title="Go to the home page" target="_self" href='/'>
-					<IconHome />
-				</SquareIconLink>
-				<SquareIconLink title="Go to post list page" target="_self" href='/postlist'>
-					<IconBlog />
-				</SquareIconLink>
-				<SquareIconLink title="Go to about me page" target="_self" href='/aboutme'>
-					<IconUser />
-				</SquareIconLink>
-			</div>
-		</div>
-	</main>
-	
-</body>
+		<script is:inline>
+			const toggleTheme = () => {
+				document.documentElement.classList.toggle("dark");
+				localStorage.theme = document.documentElement.classList.contains("dark")
+					? "dark"
+					: "light";
+			};
 
+			window.toggleTheme = toggleTheme;
+
+			if (localStorage.theme === "dark") {
+				document.documentElement.classList.add("dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+			}
+		</script>
+	</body>
 </html>
-
-
-<script is:inline>
-
-	const toggleTheme = () => {
-		document.documentElement.classList.toggle('dark');
-		localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
-	}
-
-	window.toggleTheme = toggleTheme;
-
-	if (localStorage.theme === 'dark') {
-		document.documentElement.classList.add('dark')
-	} else {
-		document.documentElement.classList.remove('dark')
-	}
-
-</script>
-
-<style>
-	/* raleway-200 - latin */
-	@font-face {
-		font-family: 'Raleway';
-		font-style: normal;
-		font-weight: 200;
-		src: local(''),
-			url('../../public/fonts/raleway-v28-latin-200.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../../public/fonts/raleway-v28-latin-200.woff') format('woff');
-		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-
-	/* raleway-300 - latin */
-	@font-face {
-		font-family: 'Raleway';
-		font-style: normal;
-		font-weight: 300;
-		src: local(''),
-			url('../../public/fonts/raleway-v28-latin-300.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../../public/fonts/raleway-v28-latin-300.woff') format('woff');
-		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-
-	/* raleway-regular - latin */
-	@font-face {
-		font-family: 'Raleway';
-		font-style: normal;
-		font-weight: 400;
-		src: local(''),
-			url('../../public/fonts/raleway-v28-latin-regular.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../../public/fonts/raleway-v28-latin-regular.woff') format('woff');
-		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-
-	/* raleway-500 - latin */
-	@font-face {
-		font-family: 'Raleway';
-		font-style: normal;
-		font-weight: 500;
-		src: local(''),
-			url('../../public/fonts/raleway-v28-latin-500.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../../public/fonts/raleway-v28-latin-500.woff') format('woff');
-		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-
-	/* raleway-700 - latin */
-	@font-face {
-		font-family: 'Raleway';
-		font-style: normal;
-		font-weight: 700;
-		src: local(''),
-			url('../../public/fonts/raleway-v28-latin-700.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../../public/fonts/raleway-v28-latin-700.woff') format('woff');
-		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-
-	/* raleway-900 - latin */
-	@font-face {
-		font-family: 'Raleway';
-		font-style: normal;
-		font-weight: 900;
-		src: local(''),
-			url('../../public/fonts/raleway-v28-latin-900.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../../public/fonts/raleway-v28-latin-900.woff') format('woff');
-		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-
-	/* raleway-200italic - latin */
-	@font-face {
-		font-family: 'Raleway';
-		font-style: italic;
-		font-weight: 200;
-		src: local(''),
-			url('../../public/fonts/raleway-v28-latin-200italic.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../../public/fonts/raleway-v28-latin-200italic.woff') format('woff');
-		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-
-	/* raleway-300italic - latin */
-	@font-face {
-		font-family: 'Raleway';
-		font-style: italic;
-		font-weight: 300;
-		src: local(''),
-			url('../../public/fonts/raleway-v28-latin-300italic.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */
-			url('../../public/fonts/raleway-v28-latin-300italic.woff') format('woff');
-		/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-
-	.heart {
-		display: inline-block;
-		color: #DA62C4;
-		animation: heartbeat 3s ease-in-out infinite;
-	}
-
-	@keyframes heartbeat {
-
-		0%,
-		50%,
-		100% {
-			transform: scale(1);
-		}
-
-		5% {
-			transform: scale(1.125);
-		}
-
-		10% {
-			transform: scale(1.05);
-		}
-
-		15% {
-			transform: scale(1.25);
-		}
-	}
-</style>
