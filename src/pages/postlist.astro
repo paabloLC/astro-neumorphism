@@ -1,11 +1,11 @@
 ---
+import ContainerScroll from '@components/ContainerScroll.astro';
 import MediumPost from '@components/MediumPost';
-import MainContainer from 'src/components/MainContainer.astro';
 import Layout from '../components/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro Neumorphism template">
-	<MainContainer>
+	<ContainerScroll>
 		<MediumPost client:load />
-	</MainContainer>
+	</ContainerScroll>
 </Layout>
