@@ -88,10 +88,10 @@ module.exports = {
       animation: {
         "fade-in": "fade-in 200ms ease-out 0s 1 normal forwards running",
         "fade-out": "fade-out 200ms ease-in 0s 1 normal forwards running",
-        expand: "expand 400ms linear 0s 1 normal forwards running",
+        'expand': "expand 400ms linear 0s 1 normal forwards running",
         "slide-in": "slide-in 400ms linear 0s 1 normal forwards running",
         "slide-out": "slide-out 400ms linear 0s 1 normal forwards running",
-        collapse: "collapse 400ms linear 0s 1 normal forwards running",
+        'collapse': "collapse 400ms linear 0s 1 normal forwards running",
       },
       spacing: {
         0.5: "0.125rem", // 2px
