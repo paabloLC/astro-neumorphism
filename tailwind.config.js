@@ -142,6 +142,7 @@ module.exports = {
       },
       animation: {
         "moving-background": "moving-background 5s ease-in-out",
+        "slide-text": "slide 5s infinite",
       },
       keyframes: {
         "moving-background": {
@@ -155,6 +156,20 @@ module.exports = {
           "100%": {
             transform: "translateY(-150px)",
             opacity: 0,
+          },
+        },
+        "slide": {
+          "0%": {
+            top: 0,
+          },
+          "25%": {
+            top: "-1.2em",
+          },
+          "50%": {
+            top: "-2.4em",
+          },
+          "75%": {
+            top: "-3.6em",
           },
         },
       },
