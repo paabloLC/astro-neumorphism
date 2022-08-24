@@ -57,7 +57,7 @@ const Blog = () => {
             href={article.link}
           ></a>
           <img
-            class="w-25 h-25 object-cover rounded-full mr-4"
+            class="hidden lg:flex w-25 h-25 object-cover rounded-full mr-4"
             src={article.thumbnail}
             alt="img"
           />
@@ -69,7 +69,7 @@ const Blog = () => {
             <ul class="flex my-auto">
               {article.categories
                 .map((category) => (
-                  <li class="text-3xs font-thin text-light-blue-dark dark:text-dark-blue-light py-1 px-2 mr-1 my-1 rounded-lg last-of-type:mr-0 shadow-box-up dark:shadow-buttons-box-dark bg-gradient-box-light h-min w-fit dark:bg-gradient-box-dark border border-light-blue-dark dark:border-light-blue-light">
+                  <li class="text-4xs lg:text-3xs font-thin text-light-blue-dark dark:text-dark-blue-light py-1 px-2 mr-1 my-1 rounded-lg last-of-type:mr-0 shadow-box-up dark:shadow-buttons-box-dark bg-gradient-box-light h-min w-fit dark:bg-gradient-box-dark border border-light-blue-dark dark:border-light-blue-light">
                     {category}
                   </li>
                 ))
