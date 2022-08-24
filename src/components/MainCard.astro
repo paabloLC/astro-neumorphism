@@ -1,7 +1,7 @@
 ---
 import IconGithub from "./icons/IconGithub.astro";
 ---
-<div class="p-2.5 my-4 shadow-up dark:shadow-box-dark dark:bg-box-dark w-full 2xl:mx-auto rounded-lg">
+<div class="p-2.5 my-2 md:my-4 shadow-up dark:shadow-box-dark dark:bg-box-dark w-full 2xl:mx-auto rounded-lg">
 	<div class="flex flex-col items-center justify-center">
 		<div class="atropos py-4 px-6 2xl:px-10 shadow-down dark:shadow-box-dark dark:bg-box-dark w-full m-auto">
 			<div class="atropos-scale">
@@ -11,7 +11,7 @@ import IconGithub from "./icons/IconGithub.astro";
 						<div
 							class="atropos-inner transition-all duration-700 relative py-4 px-2 md:px-8 2xl:px-15 border-4 rounded-md shadow-2xl border-light-blue-dark  bg-gray-light-4 md:backdrop-blur-sm flex flex-col dark:border-gray-dark dark:bg-transparent dark:shadow-orange-dark">
 
-							<div class="flex flex-col-reverse justify-between sm:flex-row">
+							<div class="flex justify-between flex-row items-center">
 								<h4
 									class="transition-all duration-700 top-0 right-0 flex font-mono text-2xl font-bold opacity-90">
 									<div class="flex text-xs items-baseline font-black text-black/80 dark:text-dark-blue-light">#pabloLC</div>
@@ -24,12 +24,12 @@ import IconGithub from "./icons/IconGithub.astro";
 								</div>
 							</div>
 							<h1
-								class='pt-1 md:pt-3 2xl:pt-5 m-0 mx-auto font-thin leading-none tracking-normal text-center text-xl md:text-2xl 2xl:text-3xl w-full bg-clip-text bg-gradient-to-r text-light-blue-dark dark:text-dark-blue-light'
+								class='flex justify-center pt-1 md:pt-3 2xl:pt-5 m-0 mx-auto font-thin leading-none tracking-normal text-lg md:text-2xl 2xl:text-3xl w-full bg-clip-text bg-gradient-to-r text-light-blue-dark dark:text-dark-blue-light'
 								data-atropos-offset="2">
 								#AstroNeumorphismt
 							</h1>
 
-							<div class="flex items-center justify-center pt-2 sm:pt-4 md:pt-0 mt-2" data-atropos-offset="5">
+							<div class="flex items-center justify-center pt-2 md:pt-4 mt-2" data-atropos-offset="5">
 								<h2
 									class="inline-block w-fit px-6 py-1 text-xs min-w-fit font-thin text-center text-white rounded-xl md:w-2/3 md:text-lg bg-black/90">
 									Astro 1.0 is here! 🚀
@@ -37,29 +37,31 @@ import IconGithub from "./icons/IconGithub.astro";
 							</div>
 
 							<h3 data-atropos-offset="5"
-								class="flex flex-col items-center justify-center pt-4 text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500 md:flex-row">
+								class="flex items-center justify-center pt-4 font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500 md:flex-row">
+								<div class="w-10 h-10 md:w-15 md:h-15">
+									<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1280 1280" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M815.039 94.6439C824.758 106.709 829.714 122.99 839.626 155.553L1056.17 866.901C976.107 825.368 889.072 795.413 797.281 779.252L656.29 302.798C653.983 295.002 646.822 289.654 638.693 289.654C630.542 289.654 623.368 295.03 621.08 302.853L481.795 779.011C389.579 795.1 302.146 825.109 221.741 866.793L439.347 155.388L439.348 155.388C449.291 122.882 454.262 106.629 463.982 94.5853C472.562 83.9531 483.723 75.6958 496.4 70.6002C510.76 64.8284 527.756 64.8284 561.749 64.8284H717.174C751.212 64.8284 768.23 64.8284 782.603 70.6123C795.292 75.7184 806.459 83.9923 815.039 94.6439Z"
+											fill="#7687A1" />
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M840.951 900.754C805.253 931.279 734.002 952.097 651.929 952.097C551.197 952.097 466.767 920.737 444.363 878.561C436.354 902.732 434.558 930.396 434.558 948.068C434.558 948.068 429.281 1034.84 489.636 1095.2C489.636 1063.86 515.042 1038.46 546.381 1038.46C600.097 1038.46 600.036 1085.32 599.987 1123.34C599.986 1124.48 599.984 1125.61 599.984 1126.73C599.984 1184.44 635.255 1233.91 685.416 1254.77C677.924 1239.36 673.721 1222.05 673.721 1203.77C673.721 1148.73 706.034 1128.23 743.588 1104.41L743.588 1104.41C773.469 1085.46 806.668 1064.41 829.548 1022.17C841.486 1000.13 848.265 974.893 848.265 948.068C848.265 931.573 845.702 915.676 840.951 900.754Z"
+											fill="#FF5D01" />
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M840.951 900.754C805.253 931.279 734.002 952.097 651.929 952.097C551.197 952.097 466.767 920.737 444.363 878.561C436.354 902.732 434.558 930.396 434.558 948.068C434.558 948.068 429.281 1034.84 489.636 1095.2C489.636 1063.86 515.042 1038.46 546.381 1038.46C600.097 1038.46 600.036 1085.32 599.987 1123.34C599.986 1124.48 599.984 1125.61 599.984 1126.73C599.984 1184.44 635.255 1233.91 685.416 1254.77C677.924 1239.36 673.721 1222.05 673.721 1203.77C673.721 1148.73 706.034 1128.23 743.588 1104.41L743.588 1104.41C773.469 1085.46 806.668 1064.41 829.548 1022.17C841.486 1000.13 848.265 974.893 848.265 948.068C848.265 931.573 845.702 915.676 840.951 900.754Z"
+											fill="url(#paint1_linear_709_110)" />
+										<defs>
+											<linearGradient id="paint1_linear_709_110" x1="1001.68" y1="652.45" x2="790.326" y2="1094.91"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#7687A1" />
+												<stop offset="1" stop-color="#7687A1" stop-opacity="0" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
 
-								<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 1280 1280" fill="none">
-									<path fill-rule="evenodd" clip-rule="evenodd"
-										d="M815.039 94.6439C824.758 106.709 829.714 122.99 839.626 155.553L1056.17 866.901C976.107 825.368 889.072 795.413 797.281 779.252L656.29 302.798C653.983 295.002 646.822 289.654 638.693 289.654C630.542 289.654 623.368 295.03 621.08 302.853L481.795 779.011C389.579 795.1 302.146 825.109 221.741 866.793L439.347 155.388L439.348 155.388C449.291 122.882 454.262 106.629 463.982 94.5853C472.562 83.9531 483.723 75.6958 496.4 70.6002C510.76 64.8284 527.756 64.8284 561.749 64.8284H717.174C751.212 64.8284 768.23 64.8284 782.603 70.6123C795.292 75.7184 806.459 83.9923 815.039 94.6439Z"
-										fill="#7687A1" />
-									<path fill-rule="evenodd" clip-rule="evenodd"
-										d="M840.951 900.754C805.253 931.279 734.002 952.097 651.929 952.097C551.197 952.097 466.767 920.737 444.363 878.561C436.354 902.732 434.558 930.396 434.558 948.068C434.558 948.068 429.281 1034.84 489.636 1095.2C489.636 1063.86 515.042 1038.46 546.381 1038.46C600.097 1038.46 600.036 1085.32 599.987 1123.34C599.986 1124.48 599.984 1125.61 599.984 1126.73C599.984 1184.44 635.255 1233.91 685.416 1254.77C677.924 1239.36 673.721 1222.05 673.721 1203.77C673.721 1148.73 706.034 1128.23 743.588 1104.41L743.588 1104.41C773.469 1085.46 806.668 1064.41 829.548 1022.17C841.486 1000.13 848.265 974.893 848.265 948.068C848.265 931.573 845.702 915.676 840.951 900.754Z"
-										fill="#FF5D01" />
-									<path fill-rule="evenodd" clip-rule="evenodd"
-										d="M840.951 900.754C805.253 931.279 734.002 952.097 651.929 952.097C551.197 952.097 466.767 920.737 444.363 878.561C436.354 902.732 434.558 930.396 434.558 948.068C434.558 948.068 429.281 1034.84 489.636 1095.2C489.636 1063.86 515.042 1038.46 546.381 1038.46C600.097 1038.46 600.036 1085.32 599.987 1123.34C599.986 1124.48 599.984 1125.61 599.984 1126.73C599.984 1184.44 635.255 1233.91 685.416 1254.77C677.924 1239.36 673.721 1222.05 673.721 1203.77C673.721 1148.73 706.034 1128.23 743.588 1104.41L743.588 1104.41C773.469 1085.46 806.668 1064.41 829.548 1022.17C841.486 1000.13 848.265 974.893 848.265 948.068C848.265 931.573 845.702 915.676 840.951 900.754Z"
-										fill="url(#paint1_linear_709_110)" />
-									<defs>
-										<linearGradient id="paint1_linear_709_110" x1="1001.68" y1="652.45" x2="790.326" y2="1094.91"
-											gradientUnits="userSpaceOnUse">
-											<stop stop-color="#7687A1" />
-											<stop offset="1" stop-color="#7687A1" stop-opacity="0" />
-										</linearGradient>
-									</defs>
-								</svg>
 								<div class="flex flex-col items-center justify-center leading-none md:items-start">
-									<span class="block -mb-1 text-lg text-black dark:text-white/70">Astro theme</span>
-									<a class="dark:from-white-900 dark:to-white-500" href='https://astro.build/themes/' rel="noopener" target='_blank'>astro.build/themes</a>
+									<span class="block md:-mb-1 text-sm md:text-lg text-black dark:text-white/70">Astro theme</span>
+									<a class="text-sm md:text-lg dark:from-white-900 dark:to-white-500" href='https://astro.build/themes/' rel="noopener" target='_blank'>astro.build/themes</a>
 								</div>
 							</h3>
 						</div>
