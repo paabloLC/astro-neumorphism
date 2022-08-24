@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs"
   },
   "devDependencies": {
     "@astrojs/preact": "0.5.2",
@@ -19,6 +19,7 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
+    "@astrojs/deno": "^1.0.0",
     "atropos": "1.0.2",
     "moment": "^2.29.4"
   }
