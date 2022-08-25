@@ -1,6 +1,29 @@
-# Welcome to Astro Neumorphismt template using [Astro](https://astro.build). (by [pabloLC](https://github.com/paabloLC))
+# [Astro](https://astro.build) Neumorphismt (made with ❤️ by [pabloLC](https://github.com/paabloLC))
 
-> 🧑‍🚀 **Seasoned astronaut?** 
+* A simple and responsive template focused on the entire UI design style with __neumorphism styles.__
+  
+<img src="https://user-images.githubusercontent.com/13178577/186695514-7811daf8-891c-473d-92c1-c288a1b80ba7.png" width="100%"
+max-height="450px" style="object-fit:cover;"  alt="mockup astro neumorphismt" />
+
+<img src="https://user-images.githubusercontent.com/13178577/186701536-582cfd88-a49d-4834-ae44-e5c2f80b2ae7.png" width="100%"
+height="100%" style="object-fit:cover;"  alt="mockup astro neumorphismt" />
+
+<img src="https://user-images.githubusercontent.com/13178577/186701625-a5e17faf-9cd8-4b11-bff4-d563e9ad5cee.png" width="100%"
+height="450px" style="object-fit:cover;"  alt="mockup astro neumorphismt" />
+
+## 🚀 Live demo URL: <https://astro-neumorph.deno.dev/>
+
+## 🧑‍🚀 Features
+
+* __Interactive and customizable card__ in the homepage. _(please, do hover the card asap you can! )_
+* __Display a list with your Medium posts__ just replacing your Medium's username.
+* __Fully responsive site__ - Depending on the viewport it shows different components.
+* __Dark mode__ could be configured using `tailwind.config.js`.
+* __Build__ using TypeScript and Preact lib.
+* __Styled__ with Tailwind CSS.
+* __Uses `astro@1.0`__
+* __Modular__ - The structure is highly modular, feel free to customize or add new components.
+* __Font family__ - The Google font `Raleway` has been integrated into the project. It's not using a CDN.
 
 ## 🚀 Project Structure
 
@@ -13,16 +36,20 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── src/
 │   ├── components/
 │   │   └── Layout.astro
+│   │   └── allOfThem
+    │   ├── icons/
+    │   │   └── Icons.astro
+│   ├── images/
+│   │   └── avatar.jpg
 │   └── pages/
 │       └── index.astro
+│       └── aboutme.astro
+│       └── postlist.astro
+│   └── styles/
+│       └── base.css
+└── tailwind.config.js
 └── package.json
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -35,6 +62,4 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+## 🫶 Any feedback is always welcome! ✨✨
