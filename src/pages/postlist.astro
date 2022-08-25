@@ -1,11 +1,17 @@
 ---
+import Layout from "../components/Layout.astro";
 import ContainerScroll from '@components/ContainerScroll.astro';
-import MediumPost from '@components/MediumPost';
-import Layout from '../components/Layout.astro';
+import MediumPost from "@components/MediumPost";
+import ContainerUp from "@components/ContainerUp.astro";
 ---
 
 <Layout title="Welcome to Astro Neumorphism template">
-	<ContainerScroll>
-		<MediumPost client:load />
-	</ContainerScroll>
+  <ContainerUp>
+		<h1 class="font-thin leading-extra-loose md:text-lg 2xl:text-xl text-light-blue-dark dark:text-dark-blue-light">Your list with your Medium posts.</h1>
+  </ContainerUp>
+
+	
+  <ContainerScroll>
+    <MediumPost client:visible />
+  </ContainerScroll>
 </Layout>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "preact/hooks";
-import * as moment from "moment";
+// import * as moment from "moment";
 
 const Blog = () => {
   const [mediumData, setMediumData] = useState([]);
@@ -57,12 +57,12 @@ const Blog = () => {
             href={article.link}
           ></a>
           <img
-            class="hidden lg:flex w-25 h-25 object-cover rounded-full mr-4"
+            class="hidden lg:flex lg:w-15 lg:h-15 2xl:w-25 2xl:h-25 object-cover rounded-full mr-4"
             src={article.thumbnail}
             alt="img"
           />
           <div class="flex flex-col">
-            <h1 class="text-xs items-baseline font-bold capitalize text-light-blue-dark dark:text-dark-blue-light">
+            <h1 class="text-xxs 2xl:text-xs items-baseline font-bold capitalize text-light-blue-dark dark:text-dark-blue-light">
               {article.title}
             </h1>
 
@@ -77,7 +77,8 @@ const Blog = () => {
             </ul>
 
             <p class="text-xxs font-thin text-light-blue-dark dark:text-dark-blue-light mt-auto">
-              Published: {moment(article.pubDate).format("DD-MM-YYYY")}
+              {/* The moment library is not working on production at the moment. */}
+              {/* Published: {moment(article.pubDate).format("DD-MM-YYYY")} */}
             </p>
           </div>
         </div>
