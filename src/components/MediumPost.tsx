@@ -1,5 +1,5 @@
 import { useState, useEffect } from "preact/hooks";
-import * as moment from "moment";
+// import * as moment from "moment";
 
 const Blog = () => {
   const [mediumData, setMediumData] = useState([]);
@@ -77,7 +77,7 @@ const Blog = () => {
             </ul>
 
             <p class="text-xxs font-thin text-light-blue-dark dark:text-dark-blue-light mt-auto">
-              Published: {moment(article.pubDate).format("DD-MM-YYYY")}
+              {/* Published: {moment(article.pubDate).format("DD-MM-YYYY")} */}
             </p>
           </div>
         </div>
