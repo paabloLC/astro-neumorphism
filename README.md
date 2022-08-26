@@ -11,8 +11,6 @@ height="100%" style="object-fit:cover;"  alt="mockup astro neumorphismt" />
 <img src="https://user-images.githubusercontent.com/13178577/186701625-a5e17faf-9cd8-4b11-bff4-d563e9ad5cee.png" width="100%"
 height="450px" style="object-fit:cover;"  alt="mockup astro neumorphismt" />
 
-## 🚀 Live demo URL: <https://astro-neumorph.deno.dev/>
-
 ## 🧑‍🚀 Features
 
 * __Interactive and customizable card__ in the homepage. _(please, do hover the card asap you can! )_
@@ -63,3 +61,5 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview` | Preview your build locally, before deploying |
 
 ## 🫶 Any feedback is always welcome! ✨✨
+
+## 🚀 Live demo URL: <https://astro-neumorph.deno.dev/>
