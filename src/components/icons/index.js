@@ -6,6 +6,7 @@ import IconInstagram from "./IconInstagram.astro"
 import IconUser from "./IconUser.astro"
 import IconBlog from "./IconBlog.astro"
 import IconAstro from "./IconAstro.astro"
+import IconMenu from "./IconMenu.astro"
 
 export {
   IconSun,
@@ -15,5 +16,6 @@ export {
   IconInstagram,
   IconUser,
   IconBlog,
+  IconMenu,
   IconAstro
 }
