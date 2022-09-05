@@ -23,6 +23,10 @@ height="450px" style="object-fit:cover;"  alt="mockup astro neumorphismt" />
 * __Modular__ - The structure is highly modular, feel free to customize or add new components.
 * __Font family__ - The Google font `Raleway` has been integrated into the project. It's not using a CDN.
 
+## ⛵️ Medium post about why I built this theme
+
+- [Why I built a theme for the AstroJS community](https://medium.com/@pablolc/why-i-built-a-theme-for-the-astrojs-community-c96da1c692b3)
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -63,3 +67,8 @@ All commands are run from the root of the project, from a terminal:
 ## 🫶 Any feedback is always welcome! ✨✨
 
 ## 🚀 Live demo URL: <https://astro-neumorph.deno.dev/>
+
+## Credits
+
+* Background animated
+  * Source: <https://github.com/midudev/miduconf-website>; Note: IMHO [@midudev](https://github.com/midudev) has the best JS community 🇪🇸 in Spanish.
