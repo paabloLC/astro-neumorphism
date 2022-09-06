@@ -1,4 +1,4 @@
-# [Astro](https://astro.build) Neumorphism (made with ❤️ by [pabloLC](https://github.com/paabloLC))
+## [Astro](https://astro.build) Neumorphism (made with ❤️ by [pabloLC](https://github.com/paabloLC))
 
 * A simple and responsive template focused on the entire UI design style with __neumorphism styles.__
   
