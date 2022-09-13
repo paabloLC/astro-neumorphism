@@ -71,4 +71,4 @@ All commands are run from the root of the project, from a terminal:
 ## Credits
 
 * Background animated
-  * Source: <https://github.com/midudev/miduconf-website>; Note: IMHO [@midudev](https://github.com/midudev) | JS community 🇪🇸 
+  * Source: <https://github.com/midudev/miduconf-website>; [@midudev](https://github.com/midudev) | JS community 🇪🇸 
