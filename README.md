@@ -1,4 +1,4 @@
-# [Astro](https://astro.build) Neumorphism (made with ❤️ by [pabloLC](https://github.com/paabloLC))
+## [Astro](https://astro.build) Neumorphism (made with ❤️ by [pabloLC](https://github.com/paabloLC))
 
 * A simple and responsive template focused on the entire UI design style with __neumorphism styles.__
   
@@ -71,4 +71,4 @@ All commands are run from the root of the project, from a terminal:
 ## Credits
 
 * Background animated
-  * Source: <https://github.com/midudev/miduconf-website>; Note: IMHO [@midudev](https://github.com/midudev) has the best JS community 🇪🇸 in Spanish.
+  * Source: <https://github.com/midudev/miduconf-website>; [@midudev](https://github.com/midudev) | JS community 🇪🇸 
