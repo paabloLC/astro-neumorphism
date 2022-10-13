@@ -1,6 +1,8 @@
 import { useState, useEffect } from "preact/hooks";
 // import * as moment from "moment";
 
+const MAX_POSTS = 6;
+
 const Blog = () => {
   const [mediumData, setMediumData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -16,8 +18,6 @@ const Blog = () => {
       })
       .catch((err) => console.log(err));
   }, []);
-
-  const finalData = mediumData.slice(0, 6);
 
   return (
     <div class="medium-articles h-full">
@@ -46,28 +46,28 @@ const Blog = () => {
           </div>
         </div>
       )}
-      {finalData.map((article) => (
+      {mediumData.slice(0, MAX_POSTS).map(({guid, link, thumbnail, title, categories}) => (
         <div
           class="flex relative shadow-box-up dark:shadow-buttons-box-dark rounded-lg p-3 mb-3"
-          key={article.guid}
+          key={guid}
         >
           <a
             class="absolute w-full h-full left-0"
             target="_black"
-            href={article.link}
+            href={link}
           ></a>
           <img
             class="hidden lg:flex lg:w-15 lg:h-15 2xl:w-25 2xl:h-25 object-cover rounded-full mr-4"
-            src={article.thumbnail}
+            src={thumbnail}
             alt="img"
           />
           <div class="flex flex-col">
             <h1 class="text-xxs 2xl:text-xs items-baseline font-bold capitalize text-light-blue-dark dark:text-dark-blue-light">
-              {article.title}
+              {title}
             </h1>
 
             <ul class="flex my-auto">
-              {article.categories
+              {categories
                 .map((category) => (
                   <li class="text-4xs lg:text-3xs font-thin text-light-blue-dark dark:text-dark-blue-light py-1 px-2 mr-1 my-1 rounded-lg last-of-type:mr-0 shadow-box-up dark:shadow-buttons-box-dark bg-gradient-box-light h-min w-fit dark:bg-gradient-box-dark border border-light-blue-dark dark:border-light-blue-light">
                     {category}
