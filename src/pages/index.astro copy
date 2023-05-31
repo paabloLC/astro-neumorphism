@@ -1,0 +1,24 @@
+---
+import Layout from "../components/Layout.astro";
+import MainCard from "src/components/MainCard.astro";
+import MediumPost from "@components/MediumPost";
+import MainContainer from "src/components/MainContainer.astro";
+import ContainerScroll from "@components/ContainerScroll.astro";
+import TextSlide from "@components/TextSlide.astro";
+---
+
+<Layout title="Welcome to Astro Neumorphism template">
+	<MainCard />
+
+	<div class="block lg:hidden 2xl:block overflow-auto no-scrollbar">
+		<ContainerScroll>
+			<MediumPost client:visible />
+		</ContainerScroll>
+	</div>
+
+	<div class="hidden lg:flex 2xl:hidden">
+		<MainContainer>
+			<TextSlide />
+		</MainContainer>
+	</div>
+</Layout>
