@@ -1,20 +1,19 @@
 {
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    // Enable top-level await, and other modern ESM features.
-    "target": "ESNext",
-    "module": "ESNext",
-    // Enable node-style module resolution, for things like npm package imports.
-    "moduleResolution": "node",
-    // Enable JSON imports.
-    "resolveJsonModule": true,
-    // Enable stricter transpilation for better output.
-    "isolatedModules": true,
-    "types": ["astro/client", "preact"],
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-    }
-  }
+      "@components/*": ["src/components/*"]
+    },
+    "types": ["astro/client", "preact"]
+  },
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "dist"
+  ]
 }
