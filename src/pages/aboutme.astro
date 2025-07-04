@@ -1,6 +1,7 @@
 ---
 import MainContainer from "src/components/MainContainer.astro";
 import Layout from "../components/Layout.astro";
+import avatarImage from "../images/avatar.jpeg";
 
 ---
 
@@ -9,7 +10,7 @@ import Layout from "../components/Layout.astro";
     <div class="flex flex-col md:flex-row items-center space-x-4 shadow-box-up dark:shadow-orange-dark p-4 md:p-6 rounded-xl">
       <img
         class="p-1 mb-2 md:mb-0 w-40 h-40 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-        src="/src/images/avatar.jpeg"
+        src={avatarImage.src}
         alt="Bordered avatar"
       />
       <div class="font-medium dark:text-white">
