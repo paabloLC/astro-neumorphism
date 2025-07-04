@@ -19,7 +19,7 @@ height="450px" style="object-fit:cover;"  alt="mockup astro neumorphismt" />
 * __Dark mode__ could be configured using `tailwind.config.js`.
 * __Build__ using TypeScript and Preact lib.
 * __Styled__ with Tailwind CSS.
-* __Uses `astro@1.0`__
+* __Uses `astro@5.11`__
 * __Modular__ - The structure is highly modular, feel free to customize or add new components.
 * __Font family__ - The Google font `Raleway` has been integrated into the project. It's not using a CDN.
 
@@ -37,19 +37,39 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.ico
 ├── src/
 │   ├── components/
-│   │   └── Layout.astro
-│   │   └── allOfThem
-    │   ├── icons/
-    │   │   └── Icons.astro
+│   │   ├── Article.tsx
+│   │   ├── ContainerScroll.astro
+│   │   ├── ContainerUp.astro
+│   │   ├── Layout.astro
+│   │   ├── MainCard.astro
+│   │   ├── MainContainer.astro
+│   │   ├── MediumPost.tsx
+│   │   ├── RoundIconButton.astro
+│   │   ├── SquareIconLink.astro
+│   │   ├── StarCount.tsx
+│   │   ├── Technologies.astro
+│   │   ├── TextSlide.astro
+│   │   └── icons/
+│   │       └── IconAstro.astro
+│   │       └── IconBlog.astro
+│   │       └── IconGithub.astro
+│   │       └── IconHome.astro
+│   │       └── IconInstagram.astro
+│   │       └── IconMenu.astro
+│   │       └── IconSun.astro
+│   │       └── IconTwitter.astro
+│   │       └── IconUser.astro
+│   │       └── index.js
 │   ├── images/
-│   │   └── avatar.jpg
+│   │   ├── avatar.jpeg
+│   │   └── placeholder.jpeg
 │   └── pages/
-│       └── index.astro
-│       └── aboutme.astro
+│       ├── aboutme.astro
+│       ├── index.astro
 │       └── postlist.astro
 │   └── styles/
 │       └── base.css
-└── tailwind.config.js
+├── tailwind.config.js
 └── package.json
 ```
 
@@ -64,9 +84,9 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
 
-## 🫶 Any feedback is always welcome! ✨✨
+#### 🫶 Any feedback is always welcome! ✨✨
 
-## 🚀 Live demo URL: <https://astro-neumorph.deno.dev/>
+## 🚀 Live demo URL: <https://astro-neumorphism-roan.vercel.app/>
 
 ## Credits
 
