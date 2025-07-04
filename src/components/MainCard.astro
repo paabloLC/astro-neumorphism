@@ -1,5 +1,6 @@
 ---
 import IconGithub from "./icons/IconGithub.astro";
+import StarCount from "./StarCount";
 ---
 <div class="p-2.5 my-2 md:my-4 shadow-up dark:shadow-box-dark dark:bg-box-dark w-full 2xl:mx-auto rounded-lg">
 	<div class="flex flex-col items-center justify-center">
@@ -14,12 +15,12 @@ import IconGithub from "./icons/IconGithub.astro";
 							<div class="flex justify-between flex-row items-center">
 								<h4
 									class="transition-all duration-700 top-0 right-0 flex font-mono text-2xl font-bold opacity-90">
-									<div class="flex text-xs items-baseline font-black text-black/80 dark:text-dark-blue-light">#pabloLC</div>
+									<a href="https://github.com/paabloLC" target="_blank" rel="noopener noreferrer" class="flex text-xs items-baseline font-black text-black/80 dark:text-dark-blue-light">#pabloLC</a>
 								</h4>
 								<div class="flex items-center justify-center">
 									<h4
 										class="transition-all duration-700 top-0 right-0 flex font-mono text-2xl font-bold opacity-90">
-										<div class="flex text-xs items-baseline font-black uppercase text-black/80 dark:text-dark-blue-light"><IconGithub /> #001<span class="text-lg ml-1">⭐️</span> </div>
+										<div class="flex text-xs items-baseline font-black uppercase text-black/80 dark:text-dark-blue-light"><IconGithub /> <StarCount client:visible repo="paabloLC/astro-neumorphism" /></div>
 									</h4>
 								</div>
 							</div>
@@ -32,7 +33,7 @@ import IconGithub from "./icons/IconGithub.astro";
 							<div class="flex items-center justify-center pt-2" data-atropos-offset="5">
 								<h2
 									class="inline-block w-fit px-6 py-1 text-xs min-w-fit font-thin text-center text-white rounded-xl md:w-2/3 md:text-lg bg-black/90">
-									Astro 1.1 is here! 🚀
+									Astro 5.11 is here! 🚀
 								</h2>
 							</div>
 
