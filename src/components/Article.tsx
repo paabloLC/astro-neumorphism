@@ -4,6 +4,7 @@ export type ArticleType = {
   thumbnail: string;
   title: string;
   categories: string[];
+  content: string;
 }
 
 type Props = {
@@ -11,7 +12,15 @@ type Props = {
 }
 
 const Article = ({article}: Props) => {
-  const {guid, link, thumbnail, title, categories} = article;
+  const {guid, link, thumbnail, title, categories, content} = article;
+
+  const getImageUrl = (htmlContent: string): string => {
+    const imgMatch = htmlContent.match(/<img[^>]+src="([^">]+)"/);
+    return imgMatch ? imgMatch[1] : '/src/images/placeholder.jpeg'; // Placeholder image
+  };
+
+  const imageUrl = thumbnail && thumbnail.length > 0 ? thumbnail : getImageUrl(content);
+
   return (
     <div
       class="flex relative shadow-box-up dark:shadow-buttons-box-dark rounded-lg p-3 mb-3"
@@ -20,7 +29,7 @@ const Article = ({article}: Props) => {
       <a class="absolute w-full h-full left-0" target="_black" href={link}></a>
       <img
         class="hidden lg:flex lg:w-15 lg:h-15 2xl:w-25 2xl:h-25 object-cover rounded-full mr-4"
-        src={thumbnail}
+        src={imageUrl}
         alt="img"
       />
       <div class="flex flex-col">
