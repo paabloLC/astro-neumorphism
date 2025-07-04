@@ -26,13 +26,13 @@ export default function StarCount({ repo }: StarCountProps) {
       href={`https://github.com/${repo}`}
       target="_blank"
       rel="noopener noreferrer"
-      class="text-sm ml-1"
+      class="inline-flex items-center text-sm ml-1"
       onClick={(e) => {
         // Optional: Add a small delay before re-fetching to give GitHub time to update
         setTimeout(() => {
           fetchStars();
         }, 2000); // 2 seconds delay
       }}
-    >{stars !== null ? stars : '...'}⭐️</a>
+    ><span class="mr-1">{stars !== null ? stars : '...'}</span>⭐️</a>
   );
 }
