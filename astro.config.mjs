@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import preact from '@astrojs/preact';
-import deno from '@astrojs/deno';
+import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,5 +11,5 @@ export default defineConfig({
     config: { applyBaseStyles: false },
 	}), preact()],
 	output: 'server',
-  adapter: deno(),
+  adapter: vercel(),
 });
