@@ -6,21 +6,22 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs"
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/preact": "0.5.2",
+    "@astrojs/preact": "^4.1.0",
     "@astrojs/renderer-preact": "^0.5.0",
-    "@astrojs/tailwind": "^0.2.1",
-    "astro": "^1.1.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/vercel": "^8.2.1",
+    "astro": "^5.11.0",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.14",
-    "preact": "^10.10.2",
+    "preact": "^10.26.9",
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "@astrojs/deno": "^1.0.0",
     "atropos": "1.0.2",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "preact-render-to-string": "^6.5.13"
   }
 }
